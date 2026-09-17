@@ -3,10 +3,6 @@ import matplotlib.pyplot as plt
 import xarray as xr
 from glob import glob
 
-import scienceplots
-
-plt.style.use('science')
-plt.rc('text.latex', preamble=r'\usepackage{siunitx}')
 
 # Needed to define data structure
 from collections import OrderedDict
