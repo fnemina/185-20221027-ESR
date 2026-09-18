@@ -58,7 +58,7 @@ El objetivo principal es brindar una formación integral en el flujo metodológi
         ├── instrumentos/                # Datos limnológicos in situ:
         │   └── 185-20221027-ESR-AlgaeTorch.csv  # Clorofila-a, Ficocianina y Turbidez (bbe Moldaenke)
         ├── planilla campo/              # Planilla de campaña original escaneada (.pdf) con metadatos
-        ├── fotos/                       # Registro fotográfico organizado por estación (punto-01 a punto-06: cielo, agua y planilla)
+        ├── fotos/                       # Registro fotográfico organizado por estación (punto-01 a punto-06: agua y cielo)
         ├── rsr/                         # Curvas de Respuesta Espectral Relativa de sensores espaciales
         │   ├── s3a_olci_RSR.nc          # Curvas RSR Sentinel-3A OLCI
         │   ├── sentinel-2a_msi_RSR.nc   # Curvas RSR Sentinel-2A MSI
