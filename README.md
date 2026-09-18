@@ -46,7 +46,9 @@ El objetivo principal es brindar una formación integral en el flujo metodológi
 ├── EDP_radiometria_campo.ipynb          # Cuaderno principal interactivo (teoría, código y ejercicios)
 ├── README.md                            # Documentación general del curso y guía de uso
 ├── src/
-│   ├── asdreader.py                     # Módulo Python para lectura de binarios ASD FieldSpec (.asd v8)
+│   └── asdreader.py                     # Módulo Python para lectura de binarios ASD FieldSpec (.asd v8)
+├── pdf/
+│   └── EDP_radiometria_campo.pdf        # Presentación del curso en formato PDF
 └── data/
     ├── radiometricos/                   # Espectros crudos organizados por estación de muestreo
     │   ├── punto-1/ … punto-6/          # Medición en 6 estaciones a lo largo del gradiente trófico
