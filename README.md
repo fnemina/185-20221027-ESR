@@ -23,7 +23,7 @@ El objetivo principal es brindar una formación integral en el flujo metodológi
 
 ---
 
-## Fundamentos Clave:
+## Fundamentos 
 1. **Calibración Radiométrica y Corrección de Empalmes (*Splice Correction*)**:
    Las cuentas digitales crudas ($DN$) se transforman a radiancia física calibrada mediante coeficientes absolutos trazables a NIST. Las discontinuidades instrumentales debidas a los saltos térmicos y ópticos entre detectores (VNIR a 1000 nm y SWIR1/SWIR2 a 1800 nm) se corrigen con un ajuste parabólico continuo.
 2. **Reflectancia de Teledetección ($R_{rs}$)**:
@@ -47,25 +47,25 @@ El objetivo principal es brindar una formación integral en el flujo metodológi
 ├── README.md                            # Documentación general del curso y guía de uso
 ├── src/
 │   ├── asdreader.py                     # Módulo Python para lectura de binarios ASD FieldSpec (.asd v8)
-└── Data/
+└── data/
     ├── radiometricos/                   # Espectros crudos organizados por estación de muestreo
     │   ├── punto-1/ … punto-6/          # Medición en 6 estaciones a lo largo del gradiente trófico
     │   │   ├── *-wat.asd                # Radiancia total emergente del agua (L_wat)
     │   │   ├── *-sky.asd                # Radiancia difusa del cielo (L_sky)
     │   │   └── *-spc.asd                # Radiancia de panel de referencia Spectralon (L_spc)
     └── complemetarios/                  # Datos auxiliares de calibración, validación y satélite
-        ├── Calibracion/                 # Coeficientes instrumentales de fábrica (.raw, .ref, .ill, .ini)
-        ├── Instrumentos/                # Datos limnológicos in situ:
+        ├── calibracion/                 # Coeficientes instrumentales de fábrica (.raw, .ref, .ill, .ini)
+        ├── instrumentos/                # Datos limnológicos in situ:
         │   └── 185-20221027-ESR-AlgaeTorch.csv  # Clorofila-a, Ficocianina y Turbidez (bbe Moldaenke)
-        ├── Planilla campo/              # Planilla de campaña original escaneada (.pdf) con metadatos
-        ├── Fotos/                       # Registro fotográfico georreferenciado por estación de muestreo
-        ├── RSR/                         # Curvas de Respuesta Espectral Relativa de sensores espaciales
-        │   ├── s3a_olci_RSR.nc / .csv   # Curvas RSR Sentinel-3A OLCI
+        ├── planilla campo/              # Planilla de campaña original escaneada (.pdf) con metadatos
+        ├── fotos/                       # Registro fotográfico georreferenciado por estación de muestreo
+        ├── rsr/                         # Curvas de Respuesta Espectral Relativa de sensores espaciales
+        │   ├── s3a_olci_RSR.nc          # Curvas RSR Sentinel-3A OLCI
         │   ├── sentinel-2a_msi_RSR.nc   # Curvas RSR Sentinel-2A MSI
         │   ├── sentinel-2b_msi_RSR.nc   # Curvas RSR Sentinel-2B MSI
         │   └── … (Landsat-8, MODIS, PACE OCI, etc.)
-        ├── Sentinel2/                   # Escena satelital Sentinel-2B L2A (26/10/2022) en formato GeoTIFF
-        └── Sentinel3/                   # Escena satelital Sentinel-3A OLCI WFR (27/10/2022) en GeoTIFF
+        ├── sentinel2/                   # Escena satelital Sentinel-2B L2A (26/10/2022) en formato GeoTIFF
+        └── sentinel3/                   # Escena satelital Sentinel-3A OLCI WFR (27/10/2022) en GeoTIFF
 ```
 
 ---
