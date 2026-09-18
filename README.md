@@ -23,24 +23,7 @@ El objetivo principal es brindar una formación integral en el flujo metodológi
 
 ---
 
-## Flujo de Trabajo Metodológico
-
-El flujo bio-óptico implementado en el cuaderno interactivo se estructura en las siguientes etapas:
-
-```mermaid
-flowchart TD
-    A["Mediciones Crudas ASD FieldSpec (.asd v8)<br>• Radiancia de agua (L_wat)<br>• Radiancia de cielo (L_sky)<br>• Panel Spectralon (L_spc)"] --> B["1. Lectura binaria y Calibración Absoluta<br>Cuentas (DN) ➔ Radiancia L(λ) [W/(m²·nm·sr)]"]
-    B --> C["2. Corrección de Empalmes Espectrales<br>Splice correction parabólica (VNIR / SWIR1 a 1000 nm)"]
-    C --> D["3. Cálculo de Reflectancia de Teledetección (R_rs)<br>Corrección de Fresnel ρ_F(W) (Mobley, 1999)<br>Irradiancia descendente E_d a partir de Spectralon"]
-    D --> E["4. Convolución Espectral con Satélites<br>Integración con curvas RSR (Sentinel-3 OLCI / Sentinel-2 MSI)"]
-    E --> F["5. Modelado Bio-Óptico (Aguas Caso 2)<br>Calibración contra mediciones AlgaeTorch in situ"]
-    F --> G1["Clorofila-a total [Chl-a]<br>Cociente R_rs(709) / R_rs(665)"]
-    F --> G2["Turbidez (FTU)<br>Canal monocanal R_rs(709)"]
-    F --> G3["Cianobacterias / Ficocianina<br>Cociente R_rs(709) / R_rs(620)"]
-    F --> H["6. Mapeo Satelital y Propagación de Errores<br>Sentinel-2 L2A / Google Earth Engine + Incertidumbre"]
-```
-
-### Fundamentos Clave:
+## Fundamentos Clave:
 1. **Calibración Radiométrica y Corrección de Empalmes (*Splice Correction*)**:
    Las cuentas digitales crudas ($DN$) se transforman a radiancia física calibrada mediante coeficientes absolutos trazables a NIST. Las discontinuidades instrumentales debidas a los saltos térmicos y ópticos entre detectores (VNIR a 1000 nm y SWIR1/SWIR2 a 1800 nm) se corrigen con un ajuste parabólico continuo.
 2. **Reflectancia de Teledetección ($R_{rs}$)**:
@@ -172,7 +155,7 @@ El cuaderno finaliza con una sección de **6 actividades de aplicación, anális
 
 ## Créditos e Institución
 
-* **Aurores**: Francisco Nemiña y Raul Rubio
+* **Autores**: Francisco Nemiña y Raul Rubio
 * **Curso**: Teleobservación de Aguas Marinas, Costeras e Interiores.
 * **Programa**: Escuela de Primavera 2026 (EDP 2026).
 * **Institución**: Instituto de Altos Estudios Espaciales "Mario Gulich" (Comisión Nacional de Actividades Espaciales - CONAE / Universidad Nacional de Córdoba - UNC), Falda del Cañete, Córdoba, Argentina.
