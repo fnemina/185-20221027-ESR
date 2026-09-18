@@ -100,8 +100,8 @@ flowchart TD
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/fnemina/185-20221027-ESR.git
-   cd 185-20221027-ESR
+   git clone https://github.com/fnemina/edp2026-radiometria-aguas.git
+   cd edp2026-radiometria-aguas
    ```
 
 2. **Crear y activar un entorno virtual**:
@@ -130,8 +130,8 @@ flowchart TD
 
 El cuaderno incluye al inicio celdas preparadas para descargar automáticamente el repositorio en entornos efímeros:
 ```python
-!git clone https://github.com/fnemina/185-20221027-ESR.git
-%cd 185-20221027-ESR
+!git clone https://github.com/fnemina/edp2026-radiometria-aguas.git
+%cd edp2026-radiometria-aguas
 !pip install contextily netCDF4 -qq
 ```
 
